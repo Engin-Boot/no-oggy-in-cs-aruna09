@@ -5,8 +5,8 @@ class NoOggyChecker
 {
   static void RemoveOggy(List<string> names)
   {
-    //List<string> Names = new List<string>(names);
-    foreach (var name in names.ToList())
+    List<string> Names = new List<string>(names);
+    foreach (var name in Names)
     {
         if(name.StartsWith("oggy")) {
             Console.WriteLine($"Need to remove {name}!");
